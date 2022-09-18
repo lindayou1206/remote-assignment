@@ -1,0 +1,67 @@
+*, html {
+    margin:0px;
+    padding: 0px;
+}
+/* nav */
+nav{ 
+    background-color: antiquewhite;/* Add a black background color to the top navigation */
+    height:30px;
+}
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul {        
+    display: flex;
+}
+ul li {
+    margin-right: 20px;
+    list-style-type: none;
+}
+/* nav end */
+
+.welcome{
+    height:150px; 
+    background-color:rgb(161, 210, 225);
+   
+    display:flex;
+    justify-content:center; 
+    align-items: center;
+}
+  
+
+.sectionTitle{
+    height:100px; 
+    display:flex;
+    justify-content:center; 
+    align-items: center;
+}
+
+/*content*/
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+.flexbox2{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.content{
+    height: 200px;
+    width: 600px;
+    margin:20px;
+    background-color: rgb(49, 151, 215);
+}
+
+
+.end{
+    display: flex;
+    height:30px; width: 100px;
+    justify-content:center; 
+    align-items: center;
+    background-color:rgb(161, 210, 225);
+}
