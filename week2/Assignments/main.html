@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Week1Assignment6</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    
+    <body>
+        <nav class="flexbox">       
+            <p>Linda's Assignment<p> 
+            <ul>
+                <li><a href="#">item1</a></li>
+                <li><a href="#">item2</a></li>
+                <li><a href="#">item3</a></li>
+                <li><a href="#">item4</a></li>
+            </ul>
+        </nav>
+
+ 
+        <!--更動部分start-->
+        
+        <div onclick="change();"  class="welcomeColor">
+            <h1 id="click"  class="welcome">Welcome Message</h1></button>
+            
+            <script>
+                function change(){
+                    let elem= document.querySelector("#click");
+                    elem.innerHTML="Have a good time!";
+                }
+            </script>
+        </div>
+         <!--更動部分end-->
+        <div>
+            <h2 class="sectionTitle">Section Title</h2>
+        </div>
+
+         <!--content-->
+        <div class="flexbox2"> <!--最外層框框-->
+            <div> 
+                <div class="content">content1</div>
+                <div class="content">content2</div>
+            </div>
+            <div>
+                <div class="content">content3</div>
+                <div class="content">content4</div>
+            </div>
+        </div>
+
+
+        
+        <div class="flexbox2">
+            <h5 onclick="more()" class="end">Call to Action <!--CallToAction-->
+        </div>
+        <div>
+            <div id="callToAction" style="display: none;"> <!--Content隱藏-->
+                
+                <div class="flexbox2"> <!--最外層框框-->
+                    <div> 
+                        <div class="content">content5</div>
+                        <div class="content">content6</div>
+                    </div>
+                    <div>
+                        <div class="content">content7</div>
+                        <div class="content">content8</div>
+                    </div>
+                </div>
+            
+            </div>
+          
+            <script>
+                function more(){
+                        let moreContent= document.querySelector("#callToAction");
+                        moreContent.style.display="block";
+                    }
+
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+    </head>
+<body>
+    <h1>Assignment5-3</h1>
+    
+    <button onclick="getData();">click me to get 1+2+...+10 = ?</button>
+    <div id="Answer">Answer : </div>
+    <script>
+        function getData(){
+            fetch("http://localhost:3000/data?number=10").then(function(response){
+                return response.text();
+            }).then(function(data){
+                console.log("response:"+data)
+                let answer=document.querySelector("#Answer");
+                answer.innerHTML+= data;
+            });
+        }
+    </script>
+</br>
+</br>
+
+<h1>Assignment5-4</h1>
+    Input Num<input type="number"  id="num">
+    <button onclick="getSum();">計算</button>
+    Sum<input type="text"  id="sum">
+    <script>
+        function getSum(){
+            
+            inputNum = document.getElementById("num").value;
+            fetch("http://localhost:3000/data?number="+inputNum).then(function(response){
+                return response.text();
+            }).then(function(data){
+                document.getElementById("sum").value = data;
+            });
+        }
+    </script>
+    
+
+</body>
+</html>
